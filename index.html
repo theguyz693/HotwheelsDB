@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hot Wheels Collector</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="https://i.ibb.co/Gt4ptx7/hotwheels-favicon.png" />
+</head>
+<body>
+  <div class="ticker">
+    <div class="ticker-text">
+      🔥 Hot Wheels Collector Data Loader, Add, edit, and manage your dream collection.(stop wasting money) 🏎️💨
+    </div>
+  </div>
+
+  <header>
+    <img src="NE_Preview1.png" alt="Hot Wheels" class="logo" />
+    <h1>Hot Wheels Collector</h1>
+    <button id="toggleMode">🌙 Dark Mode 🌙</button>
+  </header>
+
+  <form id="carForm">
+    <input type="text" id="name" placeholder="Car Name / Model" required />
+    <input type="number" id="value" placeholder="Value in ₹" min="0" required />
+    <input type="url" id="image" placeholder="Image URL" required />
+    <input type="url" id="wiki" placeholder="Wiki Info URL (optional)" />
+    <input type="url" id="marketplace" placeholder="Marketplace URL (optional)" />
+    <button type="submit" id="submitBtn">Add to Collection</button>
+  </form>
+
+  <div id="error" class="error"></div>
+  <div id="collection" class="grid-layout"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
